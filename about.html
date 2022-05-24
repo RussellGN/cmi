@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>CM International - About</title>
+		<link href="assets/img/inuse/favicon.webp" rel="icon" />
+
+		<link
+			href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800"
+			rel="stylesheet"
+		/>
+
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+			integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+			crossorigin="anonymous"
+		/>
+
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+		/>
+
+		<link rel="stylesheet" href="assets/css/new-styles.css" />
+	</head>
+
+	<body>
+		<div id="offcanvases">
+			<div
+				class="offcanvas offcanvas-start bg-dark"
+				tabindex="-1"
+				id="mobileNavOffcanvas"
+				aria-labelledby="mobileNavOffcanvasLabel"
+			>
+				<div class="offcanvas-header">
+					<h5 id="mobileNavOffcanvasLabel"></h5>
+
+					<button
+						type="button"
+						class="btn text-gray"
+						data-bs-dismiss="offcanvas"
+						aria-label="Close"
+					>
+						<i class="bi bi-x-circle fs-1"></i>
+					</button>
+				</div>
+
+				<div class="offcanvas-body">
+					<div class="d-flex flex-column">
+						<a class="mobile-link p-3 active" href="index.html">
+							Home
+						</a>
+
+						<a class="mobile-link p-3" href="about.html">About</a>
+
+						<a class="mobile-link p-3" href="services.html"
+							>Products & Services</a
+						>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<header id="header" class="fixed-top p-2 ps-0">
+			<div
+				class="ps-0 container-fluid container-xxl d-flex align-items-center"
+			>
+				<div class="logo bg-white p-1 ps-3 me-auto">
+					<a href="index.html">
+						<img src="assets//img/inuse/logo.webp" />
+					</a>
+				</div>
+
+				<nav class="p-0 navbar navbar-dark order-last order-lg-0">
+					<div class="d-none d-lg-flex align-items-center m-0 p-0">
+						<a class="nav-link" href="index.html"> Home </a>
+
+						<a class="nav-link active" href="about.html">About</a>
+
+						<a class="nav-link" href="services.html"
+							>Products & Services</a
+						>
+					</div>
+
+					<button
+						id="nav-toggle"
+						class="btn p-0 d-lg-none"
+						type="button"
+						data-bs-toggle="offcanvas"
+						data-bs-target="#mobileNavOffcanvas"
+						aria-controls="mobileNavOffcanvas"
+					>
+						<i class="bi bi-list text-white fs-1 px-1"></i>
+					</button>
+				</nav>
+
+				<a
+					class="btn btn-primary rounded-pill me-3 me-lg-0 ms-lg-3"
+					href="contact.html"
+					>contact</a
+				>
+			</div>
+		</header>
+
+		<section class="page-hero px-4 py-2 text-white text-center">
+			<h1 class="text-uppercase display-1">ABOUT US</h1>
+			<h3>Discover what makes CMI.</h3>
+		</section>
+
+		<main>
+			<section class="features my-5">
+				<div class="container py-5">
+					<div class="row">
+						<div
+							class="col-md-7 pt-4 pt-md-0 d-md-flex align-items-center"
+						>
+							<div class="lead text-center px-4">
+								<h2 id="what-we-do">
+									What We Do<i
+										class="bi bi-briefcase fs-1 text-goldenrod mx-3"
+									></i>
+								</h2>
+								<p>
+									CMI’s unique technology strategies and
+									advisory services support global
+									organisations to transform processes. The
+									pace of change has accelerated, so has the
+									need to quickly and efficiently embrace new
+									technologies. CMI is the bridge to
+									cost-efficient and flexible solutions. The
+									outcome? Better processes with measurable
+									results.
+								</p>
+							</div>
+						</div>
+
+						<div class="col-md-5">
+							<img
+								src="assets/img/what-we-do.png"
+								class="img-fluid py-4"
+							/>
+						</div>
+					</div>
+
+					<div class="row">
+						<div
+							id="features-specialties"
+							class="features-specialties my-5 container"
+						>
+							<h2 class="text-center mb-4">Specialists In</h2>
+
+							<div class="row">
+								<div class="col-lg-3 col-md-6 d-flex mt-4">
+									<div class="icon-box w-100">
+										<i
+											class="fs-1 mx-2 text-goldenrod bi bi-clipboard-data"
+										></i>
+										<h3>
+											Technology and innovation research.
+										</h3>
+									</div>
+								</div>
+
+								<div class="col-lg-3 col-md-6 d-flex mt-4">
+									<div class="icon-box w-100">
+										<i
+											class="fs-1 mx-2 text-goldenrod bi bi-display"
+										></i>
+										<h3>
+											New systems and processes
+											implementation.
+										</h3>
+									</div>
+								</div>
+
+								<div class="col-lg-3 col-md-6 d-flex mt-4">
+									<div class="icon-box w-100">
+										<i
+											class="fs-1 mx-2 text-goldenrod bi bi-bar-chart"
+										></i>
+										<h3>
+											Business growth and development.
+										</h3>
+									</div>
+								</div>
+
+								<div class="col-lg-3 col-md-6 d-flex mt-4">
+									<div class="icon-box w-100">
+										<i
+											class="fs-1 mx-2 text-goldenrod bi bi-headset"
+										></i>
+										<h3>
+											Consultation and advisory services.
+										</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-5 order-1 order-md-2">
+							<img
+								src="assets/img/inuse/features-2.svg"
+								class="img-fluid py-4"
+							/>
+						</div>
+
+						<div
+							class="col-md-7 pt-4 pt-md-0 order-2 order-md-1 d-md-flex align-items-center"
+						>
+							<div class="lead text-center px-4">
+								<h2 class="">
+									Our Mission<i
+										class="bi bi-flag fs-1 text-goldenrod mx-3"
+									></i>
+								</h2>
+								<p>
+									CMI has been championing digital mobility
+									and customer choice globally allowing
+									things, businesses and people to communicate
+									freely. Communication and connectivity made
+									simple.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-5">
+							<img
+								src="assets/img/inuse/features-1.svg"
+								class="img-fluid py-4"
+							/>
+						</div>
+
+						<div
+							class="col-md-7 pt-4 pt-md-0 d-md-flex align-items-center"
+						>
+							<div class="lead text-center px-4">
+								<h2 class="">
+									Our History<i
+										class="bi bi-film fs-1 text-goldenrod mx-3"
+									></i>
+								</h2>
+								<p>
+									Our leaders have over 30 years combined
+									experience with a mission to improve mobile
+									innovation for customers across the world.
+									Our partners' patented technology now serves
+									over 3,500 multinational enterprises in 196
+									countries.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-5 order-1 order-md-2">
+							<img
+								src="assets/img/partnerships.png"
+								class="img-fluid py-4"
+							/>
+						</div>
+
+						<div
+							class="col-md-7 pt-4 pt-md-0 order-2 order-md-1 d-md-flex align-items-center"
+						>
+							<div class="lead text-center px-4">
+								<h2 class="">
+									Partnerships<i
+										class="bi bi-people fs-1 text-goldenrod mx-3"
+									></i>
+								</h2>
+								<p>
+									Over the years we’ve remained independent
+									because it’s the best way to deliver what
+									our clients need – a bespoke service,
+									offering independent advice across all the
+									leading providers on a global scale. Our
+									independent advice ensures our clients get
+									exactly the right solutions, tailored to
+									their individual business needs.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="cta mt-5">
+				<div class="container p-5">
+					<div class="text-center">
+						<h3 class="mb-5">
+							Visit Our Products & Services Page For More
+						</h3>
+						<a
+							class="btn btn-lg btn-outline-secondary rounded-pill border-3"
+							href="services.html"
+							>Products & Services</a
+						>
+					</div>
+				</div>
+			</section>
+
+			<footer>
+				<div class="container-fluid p-5">
+					<div class="row">
+						<div class="col-md-6">
+							<h3>
+								CM International Trading Ltd<span
+									class="text-goldenrod"
+									>.</span
+								>
+							</h3>
+
+							<p>
+								Farnworth <br />
+								England <br />
+								BL4 9TP <br />
+								<a
+									href="contact.html#branchAccordion"
+									class="scrollto"
+								>
+									Other Branches
+								</a>
+								<br /><br />
+								Phone: +44 1618509160
+								<br />
+								Email:
+								<a
+									href="mailto:enquiries@cminternational.co.uk"
+								>
+									enquiries@cminternational.co.uk</a
+								>
+								<br />
+							</p>
+						</div>
+
+						<div class="col-md-6">
+							<h4 class="mb-3">Quick Links</h4>
+
+							<ul class="list-unstyled">
+								<li class="mb-2">
+									<i class="bi bi-chevron-right"></i>
+									<a href="contact.html">Contact</a>
+								</li>
+
+								<li class="mb-2">
+									<i class="bi bi-chevron-right"></i>
+									<a href="about.html">About us</a>
+								</li>
+
+								<li class="mb-2">
+									<i class="bi bi-chevron-right"></i>
+									<a href="services.html"
+										>Products & Services</a
+									>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="row align-items-center justify-content-between">
+						<div class="col-12 col-md pt-4 order-last order-md-0">
+							&copy; All Rights Reserved. CM International Trading
+							Limited T/A CMI is a limited company registered in
+							England and Wales.
+						</div>
+						<div class="col-12 col-md-auto pt-4">
+							<a
+								href="https://www.linkedin.com/company/53411929"
+								target="blank"
+								class="linkedin"
+								><i class="bi bi-linkedin fs-5 me-2"></i
+							></a>
+
+							<a
+								href="https://www.twitter.com/CMI12761904"
+								target="blank"
+								class="twitter"
+								><i class="bi bi-twitter fs-5"></i
+							></a>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</main>
+
+		<div id="preloader">
+			<div
+				class="d-flex h-100 w-100 align-items-center justify-content-center"
+			>
+				<div class="spinner-border text-primary" role="status">
+					<span class="visually-hidden">Loading...</span>
+				</div>
+			</div>
+		</div>
+
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+			integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+			crossorigin="anonymous"
+		></script>
+
+		<script src="https://cdn.jsdelivr.net/npm/glightbox@3.2.0/dist/js/glightbox.min.js"></script>
+
+		<script src="assets/js/main.js"></script>
+	</body>
+</html>
