@@ -17,13 +17,13 @@
 			transition: 0.3s !important;
 		}
 		.btn-primary {
-			background-color: rgb(6, 13, 131);
-			border-color: rgb(6, 13, 131);
+			background-color: rgb(8, 15, 149);
+			border-color: rgb(8, 15, 149);
 		}
 		.btn-primary:hover,
 		.btn-primary:focus {
-			background-color: rgba(6, 13, 131, 0.7);
-			border-color: rgba(6, 13, 131, 0.7);
+			background-color: rgba(8, 15, 149, 0.7);
+			border-color: rgba(8, 15, 149, 0.7);
 		}
 		.btn-outline-secondary {
 			color: goldenrod;
@@ -98,6 +98,11 @@
 		}
 		.logo {
 			border-radius: 0 20px 20px 0;
+		}
+		@media screen and (min-width: 1400px) {
+			.logo {
+				border-radius: 20px;
+			}
 		}
 		.nav-link {
 			padding: 0.5rem 0;
@@ -379,7 +384,7 @@
 		}
 		.cta:before {
 			content: "";
-			background: rgba(6, 13, 131, 0.4);
+			background: rgba(8, 15, 149, 0.4);
 			position: absolute;
 			bottom: 0;
 			top: 0;
