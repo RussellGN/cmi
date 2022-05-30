@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>CM International - Products & Services</title>
-		<link href="assets/img/inuse/favicon.webp" rel="icon" />
+		<link href="assets/favicon.webp" rel="icon" />
 
 		<link
 			href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800"
@@ -35,195 +35,7 @@
 		<link rel="stylesheet" href="assets/css/new-styles.css" />
 	</head>
 
-	<style>
-		@media screen {
-			@media screen and (max-width: 991px) {
-				.onfocus .video-play {
-					min-height: 200px;
-				}
-			}
-
-			/* unified communications section */
-			.onfocus .video-play {
-				background: linear-gradient(
-						rgba(0, 0, 0, 0.4),
-						rgba(0, 0, 0, 0.7)
-					),
-					url("assets/img/inuse/back1.jpg") center center;
-				background-size: cover;
-			}
-			/* .onfocus .container {
-				background: linear-gradient(
-						rgba(8, 15, 149, 0.7),
-						rgba(6, 42, 131, 0.4)
-					),
-					url("assets/img/inuse/good-background.jpg") center center;
-				background-size: cover;
-			} */
-
-			.onfocus .play-btn {
-				width: 94px;
-				height: 94px;
-				background: radial-gradient(
-					rgb(8, 15, 149) 50%,
-					rgba(8, 15, 149, 0.4) 52%
-				);
-				border-radius: 50%;
-				display: block;
-				position: absolute;
-				left: calc(50% - 47px);
-				top: calc(50% - 47px);
-				overflow: hidden;
-			}
-			.onfocus .play-btn:before {
-				content: "";
-				position: absolute;
-				width: 120px;
-				height: 120px;
-				-webkit-animation-delay: 0s;
-				animation-delay: 0s;
-				-webkit-animation: pulsate-btn 2s;
-				animation: pulsate-btn 2s;
-				-webkit-animation-direction: forwards;
-				animation-direction: forwards;
-				-webkit-animation-iteration-count: infinite;
-				animation-iteration-count: infinite;
-				-webkit-animation-timing-function: steps;
-				animation-timing-function: steps;
-				opacity: 1;
-				border-radius: 50%;
-				border: 5px solid rgba(8, 15, 149, 0.7);
-				top: -15%;
-				left: -15%;
-				background: rgba(198, 16, 0, 0);
-			}
-			.onfocus .play-btn:after {
-				content: "";
-				position: absolute;
-				left: 50%;
-				top: 50%;
-				transform: translateX(-40%) translateY(-50%);
-				width: 0;
-				height: 0;
-				border-top: 10px solid transparent;
-				border-bottom: 10px solid transparent;
-				border-left: 15px solid white;
-				z-index: 100;
-				transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
-			}
-			.onfocus .play-btn:hover:before {
-				content: "";
-				position: absolute;
-				left: 50%;
-				top: 50%;
-				transform: translateX(-40%) translateY(-50%);
-				width: 0;
-				height: 0;
-				border: none;
-				border-top: 10px solid transparent;
-				border-bottom: 10px solid transparent;
-				border-left: 15px solid white;
-				z-index: 200;
-				-webkit-animation: none;
-				animation: none;
-				border-radius: 0;
-			}
-			.onfocus .play-btn:hover:after {
-				border-left: 15px solid rgb(8, 15, 149);
-				transform: scale(20);
-			}
-
-			@-webkit-keyframes pulsate-btn {
-				0% {
-					transform: scale(0.6, 0.6);
-					opacity: 1;
-				}
-				100% {
-					transform: scale(1, 1);
-					opacity: 0;
-				}
-			}
-
-			@keyframes pulsate-btn {
-				0% {
-					transform: scale(0.6, 0.6);
-					opacity: 1;
-				}
-				100% {
-					transform: scale(1, 1);
-					opacity: 0;
-				}
-			}
-			/* features */
-			.features img {
-				max-height: 300px;
-			}
-			@media screen and (max-width: 1400px) {
-				.onfocus img {
-					max-height: 300px !important;
-					min-height: 250px;
-				}
-			}
-			@media screen and (max-width: 991px) {
-				.onfocus img {
-					max-height: 220px !important;
-					min-height: 200px;
-				}
-			}
-			@media screen and (max-width: 600px) {
-				.onfocus img {
-					max-height: 170px !important;
-					min-height: 150px !important;
-				}
-			}
-			@media screen and (max-width: 400px) {
-				.onfocus img {
-					max-height: 150px !important;
-					min-height: 130px !important;
-				}
-			}
-		}
-	</style>
-
-	<style>
-		@media screen {
-			.bg1 .container {
-				background: linear-gradient(
-						rgba(8, 15, 149, 0.7),
-						rgba(6, 42, 131, 0.4)
-					),
-					url("assets/img/inuse/good-background.jpg") center center;
-				background-size: cover;
-			}
-			.bg2 {
-				background: linear-gradient(
-						rgba(6, 131, 121, 0.7),
-						rgba(6, 77, 131, 0.4)
-					),
-					url("assets/img/inuse/good-background.jpg") center center;
-				background-size: cover;
-			}
-			.bg3 {
-				background: linear-gradient(
-						to top right,
-						rgba(45, 24, 84, 0.6),
-						rgba(6, 131, 119, 0.4)
-					),
-					url("assets/img/inuse/good-background.jpg") center center;
-				background-size: cover;
-			}
-			.bg4 {
-				background: linear-gradient(
-						rgba(6, 131, 106, 0.7),
-						rgba(6, 131, 81, 0.4)
-					),
-					url("assets/img/inuse/good-background.jpg") center center;
-				background-size: cover;
-			}
-		}
-	</style>
-
-	<body>
+	<body class="container-xxl p-0">
 		<div id="offcanvases">
 			<div
 				class="offcanvas offcanvas-start bg-dark"
@@ -252,7 +64,7 @@
 
 						<a class="mobile-link p-3" href="about.html">About</a>
 
-						<a class="mobile-link p-3" href="about.html"
+						<a class="mobile-link p-3" href="services.html"
 							>Products & Services</a
 						>
 					</div>
@@ -260,13 +72,13 @@
 			</div>
 		</div>
 
-		<header id="header" class="fixed-top p-2 ps-0">
+		<header id="header" class="container-xxl fixed-top p-2 ps-0">
 			<div
 				class="ps-0 container-fluid container-xxl d-flex align-items-center"
 			>
 				<div class="logo bg-white p-1 ps-3 me-auto">
 					<a href="index.html">
-						<img src="assets//img/inuse/logo.webp" />
+						<img src="assets/img/logo.webp" />
 					</a>
 				</div>
 
@@ -307,14 +119,17 @@
 		</section>
 
 		<main>
-			<section id="mobile-communications" class="features my-4">
+			<section class="features my-4 onfocus">
 				<div class="container py-5">
-					<div class="row">
+					<div
+						class="row py-5 justify-content-around"
+						id="mobile-communications1"
+					>
 						<div
-							class="col-md-5 d-flex justify-content-center align-items-center p-4"
+							class="col-md-5 c-rounded p-0 overflow-hidden d-flex justify-content-center align-items-center"
 						>
 							<img
-								src="assets/img/inuse/features-3.svg"
+								src="assets/img/mobile-coms.jpeg"
 								class="img-fluid"
 							/>
 						</div>
@@ -322,7 +137,7 @@
 						<div
 							class="col-md-7 pt-4 pt-md-0 d-md-flex align-items-center"
 						>
-							<div class="lead text-center px-4">
+							<div class="lead text-md-start px-4">
 								<h2>MOBILE COMMUNICATIONS</h2>
 
 								<p>
@@ -331,8 +146,8 @@
 									built for your business.
 								</p>
 								<a
-									href="contact.html"
-									class="btn btn-outline-secondary border-3 rounded-pill align-self-start"
+									href="read-further.html#mobile-communications"
+									class="btn btn-outline-secondary scrollto border-3 rounded-pill align-self-start"
 									>Read More<i
 										class="bi bi-arrow-right-short px-1"
 									></i
@@ -340,52 +155,14 @@
 							</div>
 						</div>
 					</div>
-				</div>
-			</section>
 
-			<section id="mobile-device-management" class="features my-4">
-				<div class="container py-5">
-					<div class="row">
-						<div
-							class="col-md-5 order-1 d-flex justify-content-center align-items-center order-md-2"
-						>
-							<img
-								src="assets/img/network.png"
-								class="img-fluid py-4"
-							/>
-						</div>
-
-						<div
-							class="col-md-7 pt-4 pt-md-0 order-2 order-md-1 d-md-flex align-items-center"
-						>
-							<div class="lead text-center px-4">
-								<h2>MOBILE DEVICE MANAGEMENT</h2>
-
-								<p>
-									Secure, monitor, and manage all your
-									endpoints using our award-winning mobile
-									device mangement platform.
-								</p>
-
-								<a
-									href="read-more.html#mobility"
-									class="btn btn-outline-secondary border-3 rounded-pill align-self-start"
-									>Read More<i
-										class="bi bi-arrow-right-short px-1"
-									></i
-								></a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section id="asset-management" class="onfocus bg2 shadow-lg my-4">
-				<div class="container p-0 rounded-3 overflow-hidden">
-					<div class="row g-0">
+					<div
+						class="row my-5 shadow-lg c-rounded p-0 overflow-hidden"
+						id="asset-management1"
+					>
 						<div class="col-lg-6 order-2 order-lg-1">
 							<div
-								class="content text-white p-5 d-flex flex-column justify-content-center h-100"
+								class="content lead p-5 d-flex flex-column justify-content-center h-100"
 							>
 								<h3>ASSET MANAGEMENT</h3>
 
@@ -401,8 +178,8 @@
 								</p>
 
 								<a
-									href="read-more.html#mobile-device-management"
-									class="btn btn-outline-light border-3 rounded-pill align-self-start"
+									href="read-further.html#asset-management"
+									class="btn btn-outline-secondary border-3 scrollto rounded-pill align-self-start"
 									>Read More<i
 										class="bi bi-arrow-right-short px-1"
 									></i
@@ -413,41 +190,35 @@
 						<div
 							class="col-lg-6 pt-5 py-lg-5 order-1 order-lg-2 d-flex align-items-center justify-content-center background-img-container"
 						>
-							<img src="/assets/img/repair.png" />
+							<img src="assets/img/repair.png" />
 						</div>
 					</div>
-				</div>
-			</section>
 
-			<section id="consultancy" class="features my-4">
-				<div class="container py-5">
-					<div class="row">
+					<div class="row py-5" id="mobile-device-management1">
 						<div
-							class="col-md-5 d-flex justify-content-center align-items-center p-4"
+							class="col-md-5 c-rounded overflow-hidden p-0 order-1 d-flex justify-content-center align-items-center"
 						>
 							<img
-								src="assets/img/consultancy.png"
+								src="assets/img/device-management.jpeg"
 								class="img-fluid"
 							/>
 						</div>
 
 						<div
-							class="col-md-7 pt-4 pt-md-0 d-md-flex align-items-center"
+							class="col-md-7 pt-4 pt-md-0 order-2 d-md-flex align-items-center"
 						>
-							<div class="lead text-center px-4">
-								<h2>CONSULTANCY</h2>
+							<div class="lead text-md-start px-4">
+								<h2>MOBILE DEVICE MANAGEMENT</h2>
 
 								<p>
-									Mobile services are essential for most
-									organisations and costs have dramatically
-									reduced year on year. So why is it often the
-									case that costs don't reduce on a telecoms
-									bill? The answer is often proactive
-									management or lack thereof.
+									Secure, monitor, and manage all your
+									endpoints using our award-winning mobile
+									device mangement platform.
 								</p>
+
 								<a
-									href="contact.html"
-									class="btn btn-outline-secondary border-3 rounded-pill align-self-start"
+									href="read-further.html#mobile-device-management"
+									class="btn btn-outline-secondary border-3 scrollto rounded-pill align-self-start"
 									>Read More<i
 										class="bi bi-arrow-right-short px-1"
 									></i
@@ -455,15 +226,14 @@
 							</div>
 						</div>
 					</div>
-				</div>
-			</section>
 
-			<section id="software" class="onfocus bg4 shadow-lg my-4">
-				<div class="container p-0 rounded-3 overflow-hidden">
-					<div class="row g-0">
+					<div
+						class="row my-5 shadow-lg c-rounded p-0 overflow-hidden"
+						id="software1"
+					>
 						<div class="col-lg-6 order-2 order-lg-1">
 							<div
-								class="content text-white p-5 d-flex flex-column justify-content-center h-100"
+								class="content lead p-5 d-flex flex-column justify-content-center h-100"
 							>
 								<h3>SOFTWARE</h3>
 
@@ -475,8 +245,8 @@
 								</p>
 
 								<a
-									href="read-more.html#mobile-device-management"
-									class="btn btn-outline-light border-3 rounded-pill align-self-start"
+									href="read-further.html#software"
+									class="btn btn-outline-secondary border-3 rounded-pill align-self-start"
 									>Read More<i
 										class="bi bi-arrow-right-short px-1"
 									></i
@@ -485,9 +255,44 @@
 						</div>
 
 						<div
-							class="col-lg-6 order-1 pt-5 py-lg-5 order-lg-2 d-flex align-items-center justify-content-center background-img-container"
+							class="col-lg-6 order-1 order-lg-2 pt-5 py-lg-5 d-flex align-items-center justify-content-center background-img-container"
 						>
-							<img src="/assets/img/software.png" />
+							<img src="assets/img/software.png" />
+						</div>
+					</div>
+
+					<div class="row py-5" id="consultancy1">
+						<div
+							class="col-md-5 c-rounded p-0 overflow-hidden d-flex justify-content-center align-items-center"
+						>
+							<img
+								src="assets/img//consultancy.jpeg"
+								class="img-fluid"
+							/>
+						</div>
+
+						<div
+							class="col-md-7 pt-4 pt-md-0 d-md-flex align-items-center"
+						>
+							<div class="lead text-md-start px-4">
+								<h2>CONSULTANCY</h2>
+
+								<p>
+									Mobile services are essential for most
+									organisations and costs have dramatically
+									reduced year on year. So why is it often the
+									case that costs don't reduce on a telecoms
+									bill? The answer is often proactive
+									management or lack thereof.
+								</p>
+								<a
+									href="read-further.html#consultancy"
+									class="btn btn-outline-secondary border-3 rounded-pill align-self-start"
+									>Read More<i
+										class="bi bi-arrow-right-short px-1"
+									></i
+								></a>
+							</div>
 						</div>
 					</div>
 				</div>

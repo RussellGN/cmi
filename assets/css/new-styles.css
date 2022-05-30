@@ -1,4 +1,4 @@
-/* ___________template styles__________ */
+/* template styles */
 @media screen {
 	/* global styles and custom classes */
 	@media screen {
@@ -28,6 +28,7 @@
 		.btn-outline-secondary {
 			color: goldenrod;
 			border-color: goldenrod;
+			font-weight: 600;
 		}
 		.btn-outline-secondary:hover {
 			background-color: goldenrod;
@@ -43,7 +44,7 @@
 	@media screen {
 		.page-hero {
 			background: linear-gradient(rgba(3, 5, 32, 0.7), rgba(0, 0, 0, 0.2)),
-				url("../img/inuse/image3.jpg") top center;
+				url("../img/image3.jpg") top center;
 			background-attachment: fixed;
 		}
 		.page-hero h1 {
@@ -105,8 +106,8 @@
 			}
 		}
 		.nav-link {
-			padding: 0.5rem 0;
-			margin: 1rem;
+			padding: 0.2rem 0;
+			margin: 0.5rem;
 		}
 		#header .nav-link {
 			border-bottom: solid transparent;
@@ -168,20 +169,20 @@
 	}
 }
 
-/* _____________home page_____________ */
+/* home page */
 @media screen {
 	/*# Hero Section*/
 	@media screen {
 		#hero {
 			width: 100%;
 			height: 100vh;
-			/* background: url(../img/inuse/image2.jpg) top center; */
+			/* background: url(../img/image2.jpg) top center; */
 			background: linear-gradient(
 					to bottom right,
 					rgba(2, 47, 52, 0.8),
 					rgba(16, 3, 71, 0.6)
 				),
-				url("../img/inuse/back1.jpg") center center;
+				url("../img/back1.jpg") center center;
 			background-size: cover;
 			overflow: hidden;
 			position: relative;
@@ -337,12 +338,14 @@
 			transition: ease-in-out 0.3s;
 		}
 
-		.specialties .specialty-item:hover {
-			transform: translateY(0);
-			box-shadow: none !important;
-		}
-		.specialties .specialty-item:hover h4 a {
-			color: goldenrod;
+		@media screen and (min-width: 991px) {
+			.specialties .specialty-item:hover {
+				transform: translateY(0);
+				box-shadow: none !important;
+			}
+			.specialties .specialty-item:hover h4 a {
+				color: goldenrod;
+			}
 		}
 	}
 
@@ -376,7 +379,7 @@
 	/* Cta_*/
 	@media screen {
 		.cta {
-			background: url(../img/inuse/image3.jpg) top center;
+			background: url(../img/image3.jpg) top center;
 			background-size: cover;
 			background-attachment: fixed;
 			overflow: hidden;
@@ -400,7 +403,7 @@
 	}
 }
 
-/* _____________about page____________ */
+/* about page */
 @media screen {
 	/* features-specialties */
 	@media screen {
@@ -408,16 +411,146 @@
 			display: flex;
 			align-items: center;
 			padding: 20px;
-			background: whitesmoke;
+			background: #f8f9fa;
 		}
 		.features-specialties .icon-box h3 {
-			font-weight: 700;
 			font-size: 16px;
+			margin: 0 !important;
 		}
 	}
 }
 
-/* prelaoder */
+/* services page */
+@media screen {
+	.features img {
+		max-height: 300px;
+	}
+	@media screen and (max-width: 1400px) {
+		.onfocus img {
+			max-height: 300px !important;
+			min-height: 250px;
+		}
+	}
+	@media screen and (max-width: 991px) {
+		.onfocus img {
+			max-height: 220px !important;
+			min-height: 200px;
+		}
+	}
+	@media screen and (max-width: 600px) {
+		.onfocus img {
+			max-height: 170px !important;
+			min-height: 150px !important;
+		}
+	}
+	@media screen and (max-width: 400px) {
+		.onfocus img {
+			max-height: 150px !important;
+			min-height: 130px !important;
+		}
+	}
+	.bg4 {
+		background: linear-gradient(
+			to bottom right,
+			rgba(6, 13, 131, 0.8),
+			rgba(6, 13, 131, 0.9)
+		);
+		/* url("../img/good-background.jpg") center center; */
+		background-size: cover;
+	}
+}
+
+/* read further page */
+@media screen {
+	.text-inherit {
+		color: inherit;
+	}
+	.collapse-btns.collapsed::after {
+		content: "Show More";
+	}
+	.collapse-btns:not(.collapsed)::after {
+		content: "Show Less";
+	}
+	.c-rounded {
+		border-radius: 20px;
+	}
+	.feature-img {
+		min-height: 250px;
+		width: auto !important;
+	}
+	.h-fit {
+		height: fit-content;
+	}
+	#card1 {
+		background: linear-gradient(
+				to bottom right,
+				rgba(2, 47, 52, 0.8),
+				rgba(16, 3, 71, 0.6)
+			),
+			url("../img/card1.webp") top center;
+	}
+	#card2 {
+		background: linear-gradient(
+				to bottom right,
+				rgba(2, 47, 52, 0.8),
+				rgba(16, 3, 71, 0.6)
+			),
+			url("../img/card2.webp") top center;
+	}
+	#card3 {
+		background: linear-gradient(
+				to bottom right,
+				rgba(2, 47, 52, 0.8),
+				rgba(16, 3, 71, 0.6)
+			),
+			url("../img/card3.webp") top center;
+	}
+	#card4 {
+		background: linear-gradient(
+				to bottom right,
+				rgba(2, 47, 52, 0.8),
+				rgba(16, 3, 71, 0.6)
+			),
+			url("../img/card4") top center;
+	}
+}
+
+/* contact page */
+/* branch accordion */
+@media screen {
+	#branchAccordion .accordion-button {
+		transition: all 0.3s;
+	}
+	#branchAccordion .accordion-button {
+		color: inherit;
+		border-bottom: solid transparent !important;
+	}
+	#branchAccordion .accordion-button:not(.collapsed) {
+		color: inherit;
+		background-color: inherit;
+		box-shadow: none;
+		border-color: gray !important;
+	}
+	#branchAccordion .accordion-button:focus {
+		border-color: gray;
+		box-shadow: none;
+	}
+	#branchAccordion .accordion-button:hover {
+		box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+	}
+	#branchAccordion .accordion-button:not(.collapsed)::after {
+		filter: grayscale(100%);
+		transform: rotate(-180deg);
+	}
+	#branchAccordion .branch-map {
+		height: 280px;
+	}
+	.word-break {
+		word-break: break-all;
+	}
+}
+
+/* preloader */
 @media screen {
 	/*--------------------------------------------------------------
 		# Preloader
