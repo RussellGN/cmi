@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>CM International - Contact</title>
-		<link href="assets/favicon.webp" rel="icon" />
+		<link href="assets/img/favicon.webp" rel="icon" />
 
 		<link
 			href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800"
@@ -38,7 +38,7 @@
 	<body class="container-xxl p-0">
 		<div id="offcanvases">
 			<div
-				class="offcanvas offcanvas-start bg-dark"
+				class="offcanvas offcanvas-start"
 				tabindex="-1"
 				id="mobileNavOffcanvas"
 				aria-labelledby="mobileNavOffcanvasLabel"
@@ -762,7 +762,11 @@
 					</div>
 
 					<div class="col-lg-4">
-						<form class="shadow p-3">
+						<form
+							action="assets/php/mail.php"
+							method="POST"
+							class="shadow p-3"
+						>
 							<h4 class="text-center p-2">Write To Us</h4>
 
 							<div class="row">
@@ -770,6 +774,9 @@
 									<div class="form-floating mb-3">
 										<input
 											name="name"
+											required
+											minlength="2"
+											maxlength="40"
 											type="text"
 											id="floatingInput"
 											class="form-control"
@@ -785,6 +792,7 @@
 									<div class="form-floating mb-3">
 										<input
 											name="email"
+											required
 											type="email"
 											id="floatingInput"
 											class="form-control"
@@ -797,10 +805,20 @@
 								</div>
 							</div>
 
+							<input
+								type="text"
+								name="full-name"
+								value=""
+								class="d-none"
+							/>
+
 							<div class="form-floating mb-3">
 								<input
 									name="subject"
 									type="text"
+									required
+									maxlength="50"
+									minlength="2"
 									id="floatingInput"
 									class="form-control"
 									placeholder="Subject"
@@ -810,6 +828,10 @@
 
 							<div class="mb-3">
 								<textarea
+									required
+									minlength="2"
+									maxlength="2000"
+									id="message-textarea"
 									class="form-control"
 									name="message"
 									rows="6"
@@ -941,5 +963,13 @@ Your Message</textarea
 		<script src="https://cdn.jsdelivr.net/npm/glightbox@3.2.0/dist/js/glightbox.min.js"></script>
 
 		<script src="assets/js/main.js"></script>
+		<script>
+			textArea = document.getElementById("message-textarea");
+			textArea.onfocus = function () {
+				if (this.value == "Your Message") {
+					this.value = "";
+				}
+			};
+		</script>
 	</body>
 </html>
