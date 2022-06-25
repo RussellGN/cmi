@@ -395,8 +395,8 @@
 			color: gray;
 			transition: ease-in-out 0.3s;
 		}
-
-		@media screen and (min-width: 991px) {
+		/*
+		@media screen and (min-width: 992px){
 			.specialties .specialty-item:hover {
 				transform: translateY(0);
 				box-shadow: none !important;
@@ -405,6 +405,7 @@
 				color: goldenrod;
 			}
 		}
+		*/
 	}
 
 	/* services */
