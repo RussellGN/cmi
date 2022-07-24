@@ -62,12 +62,17 @@
 	/* page hero */
 	@media screen {
 		.page-hero {
-			background: url("../img/herosub.png") bottom center;
+			background: url("../img/herosub.png") top center;
 			background-size: cover;
 			overflow: hidden;
 			position: relative;
-			background-attachment: fixed;
 		}
+		@media screen and (min-width: 991px) {
+			.page-hero {
+				background-attachment: fixed;
+			}
+		}
+
 		.page-hero::before {
 			content: "";
 			position: absolute;
@@ -209,7 +214,7 @@
 @media screen {
 	/*# Hero Section*/
 	@media screen {
-		/* #hero {
+		#hero {
 			width: 100%;
 			height: 100vh;
 			background: linear-gradient(
@@ -221,31 +226,12 @@
 			background-size: cover;
 			overflow: hidden;
 			position: relative;
-			background-attachment: fixed;
-		} */
-		#hero {
-			width: 100%;
-			height: 100vh;
-			background: url("../img/home-hero.jpg") center center;
-			background-size: cover;
-			overflow: hidden;
-			position: relative;
-			background-attachment: fixed;
 		}
-		#hero:before {
-			content: "";
-			position: absolute;
-			bottom: 0;
-			top: 0;
-			left: 0;
-			right: 0;
-			background: linear-gradient(
-				to bottom right,
-				rgba(2, 47, 52, 0.9),
-				rgba(16, 3, 71, 0.8)
-			);
+		@media screen and (min-width: 991px) {
+			#hero {
+				background-attachment: fixed;
+			}
 		}
-
 		#hero .hero-container {
 			position: absolute;
 			bottom: 0;
@@ -440,9 +426,13 @@
 		.cta {
 			background: url("../img/herosub.png") top center;
 			background-size: cover;
-			background-attachment: fixed;
 			overflow: hidden;
 			position: relative;
+		}
+		@media screen and (min-width: 991px) {
+			.cta {
+				background-attachment: fixed;
+			}
 		}
 		.cta:before {
 			content: "";
@@ -548,6 +538,10 @@
 				rgba(16, 3, 71, 0.6)
 			),
 			url("../img/services/card1.webp") top center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		border-radius: 10px;
+		overflow: hidden;
 	}
 	#card2 {
 		background: linear-gradient(
@@ -556,6 +550,10 @@
 				rgba(16, 3, 71, 0.6)
 			),
 			url("../img/services/card2.webp") top center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		border-radius: 10px;
+		overflow: hidden;
 	}
 	#card3 {
 		background: linear-gradient(
@@ -564,6 +562,10 @@
 				rgba(16, 3, 71, 0.6)
 			),
 			url("../img/services/card3.webp") top center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		border-radius: 10px;
+		overflow: hidden;
 	}
 	#card4 {
 		background: linear-gradient(
@@ -572,6 +574,99 @@
 				rgba(16, 3, 71, 0.6)
 			),
 			url("../img/services/card4") top center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		border-radius: 10px;
+		overflow: hidden;
+	}
+}
+
+/* sji */
+@media screen {
+	.max-w-80 {
+		max-width: 80% !important;
+	}
+	.btn-sji-green {
+		color: #009100 !important;
+		border-color: #009100 !important;
+		background-color: white !important;
+	}
+	.btn-sji-green:hover,
+	.btn-sji-green:focus {
+		background-color: #009100 !important;
+		color: white !important;
+	}
+	.btn-sji-dark {
+		color: rgb(34, 36, 34) !important;
+		border-color: rgb(34, 36, 34) !important;
+		background-color: transparent !important;
+	}
+	.btn-sji-dark:hover,
+	.btn-sji-dark:focus {
+		background-color: #009100 !important;
+		border-color: #009100 !important;
+		color: white !important;
+	}
+	.bg-sji-green {
+		background-color: #009100 !important;
+	}
+	.text-sji-green {
+		color: #009100 !important;
+	}
+	#sjiHero .carousel-inner {
+		min-height: 250px !important;
+	}
+	#sjiHero {
+		width: 100%;
+		height: 100vh;
+		background: linear-gradient(
+				to bottom right,
+				rgba(23, 13, 39, 0.7),
+				rgba(6, 64, 81, 0.7)
+			),
+			url("../sji/1596033836206.jpg") center center;
+		/* background: linear-gradient(
+					to bottom right,
+					rgba(2, 47, 52, 0.8),
+					rgba(16, 3, 71, 0.7)
+				),
+				url("../sji/1596033836206.jpg") center center; */
+		background-size: cover;
+		overflow: hidden;
+		position: relative;
+	}
+	#sjiHero p {
+		background: rgba(173, 170, 186, 0.4);
+		padding: 1rem;
+		border-radius: 10px;
+		margin: 20px auto 0;
+		max-width: 75%;
+		color: #ebebeb;
+		font-weight: 700;
+		font-size: 20px;
+	}
+	.bg-transparent {
+		background: transparent !important;
+	}
+	#sji-what-we-do {
+		height: 100vh;
+		background: linear-gradient(
+				to top right,
+				rgba(101, 121, 133, 0.4),
+				rgba(106, 143, 151, 0.2)
+			),
+			url("../sji/4.jfif") center center;
+		background-size: cover;
+	}
+	#sji-jumpstart-now {
+		height: 100vh;
+		background: linear-gradient(
+				to top right,
+				rgba(101, 121, 133, 0.4),
+				rgba(106, 143, 151, 0.2)
+			),
+			url("../sji/3.jpeg") center center;
+		background-size: cover;
 	}
 }
 
