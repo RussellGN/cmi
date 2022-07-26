@@ -586,6 +586,16 @@
 	.max-w-80 {
 		max-width: 80% !important;
 	}
+	.btn-sji-green-primary {
+		background-color: #009100 !important;
+		border-color: #009100 !important;
+		color: white !important;
+	}
+	.btn-sji-green-primary:hover,
+	.btn-sji-green-primary:focus {
+		background-color: white !important;
+		color: #009100 !important;
+	}
 	.btn-sji-green {
 		color: #009100 !important;
 		border-color: #009100 !important;
