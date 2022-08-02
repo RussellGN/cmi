@@ -1,8 +1,7 @@
 <?php
 
 $name = $_POST['name'];
-// $email = $_POST['email'];
-$email = 'cmiwebsite@gmail.com';
+$email = $_POST['email'];
 $subject = $_POST['subject'];
 $message = $_POST['message'];
 $fullName = $_POST['full-name'];
@@ -13,8 +12,7 @@ if ( ! empty($fullName)) {
 
 $mailheader = "CMI website mail. From: ".$name."<".$email.">\r\n";
 
-// $recipient = "ask@cminternational.co.uk";
-$recipient = "dudurussell@gmail.com";
+$recipient = "ask@cminternational.co.uk";
 
 mail($recipient, $subject, $message, $mailheader)
 or die("Error");
