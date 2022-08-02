@@ -18,6 +18,9 @@
 		.c-rounded-3 {
 			border-radius: 30px !important;
 		}
+		.w-fit {
+			width: fit-content !important;
+		}
 		@media screen and (min-width: 576px) {
 			.shadow-md-lg {
 				box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
@@ -580,11 +583,64 @@
 		overflow: hidden;
 	}
 }
-
 /* sji */
 @media screen {
 	.max-w-80 {
 		max-width: 80% !important;
+	}
+	.circle-1 {
+		position: absolute;
+		top: -2vw;
+		left: -2vw;
+		width: 400px;
+		height: 400px;
+		border-radius: 100%;
+		/* background: rgb(0, 145, 0, 0.4); */
+		background: #009100;
+	}
+	.circle-2 {
+		position: absolute;
+		bottom: calc(30% - 20vw);
+		right: 2vw;
+		width: 500px;
+		height: 500px;
+		border-radius: 100%;
+		/* background: rgb(0, 145, 0, 0.2); */
+		background: #009100;
+	}
+	.bg-my-light {
+		background: rgba(248, 250, 248, 0.95);
+	}
+	@media screen and (max-width: 576px) {
+		.circle-1 {
+			top: -2%;
+			left: -50%;
+		}
+		.circle-2 {
+			bottom: -2%;
+			right: -60%;
+		}
+	}
+	.underline-after {
+		padding-bottom: 0;
+		width: fit-content;
+		margin: 0 auto;
+		border-radius: 10px;
+		position: relative;
+	}
+	.underline-after::after {
+		position: absolute;
+		content: "";
+		bottom: -0.3rem;
+		width: 3rem;
+		height: 0.3rem;
+		border-radius: 10px;
+		background-color: #009100;
+		left: calc(50% - 1.5rem);
+	}
+
+	.border-sji-green {
+		border-color: #009100 !important;
 	}
 	.btn-sji-green-primary {
 		background-color: #009100 !important;
