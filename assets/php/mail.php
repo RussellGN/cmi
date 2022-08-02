@@ -12,7 +12,7 @@ if ( ! empty($fullName)) {
 
 $mailheader = "CMI website mail. From: ".$name."<".$email.">\r\n";
 
-$recipient = "enquiries@cminternational.co.uk";
+$recipient = "ask@cminternational.co.uk";
 
 mail($recipient, $subject, $message, $mailheader)
 or die("Error");
@@ -39,7 +39,7 @@ echo'
 			crossorigin="anonymous"
 		/>
 
-		<link rel="stylesheet" href="assets/css/styles.css" />
+		<link rel="stylesheet" href="/assets/css/styles.css" />
 	</head>
 
 	<body class="text-center lead my-5 container">
