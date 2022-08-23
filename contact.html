@@ -45,9 +45,17 @@
 			crossorigin="anonymous"
 		></script>
 
+		<script src="https://unpkg.com/@botpoison/browser" async></script>
+
 		<script defer src="assets/js/main.js"></script>
 		<script defer src="./assets/js/contact.js"></script>
 	</head>
+
+	<style>
+		#loading {
+			display: none;
+		}
+	</style>
 
 	<body>
 		<div id="offcanvases">
@@ -787,22 +795,59 @@
 
 					<div class="col-lg-4">
 						<form
-							action="assets/php/mail.php"
+							id="contactUsForm"
+							data-botpoison-public-key="pk_1197335d-48ea-4d06-86f9-10be4aaccf44"
+							action="https://submit-form.com/zGljBTDC"
 							method="POST"
-							class="shadow p-3"
+							class="shadow p-3 position-relative"
 						>
+							<div>
+								<input
+									type="hidden"
+									name="_redirect"
+									value="https://cminternational.co.uk/thanks.html"
+								/>
+								<input
+									type="hidden"
+									name="_append"
+									value="false"
+								/>
+								<input
+									type="hidden"
+									name="_error"
+									value="https://cminternational.co.uk/error.html"
+								/>
+								<input
+									type="hidden"
+									name="_email.template.title"
+									value="false"
+								/>
+								<input
+									type="hidden"
+									name="_email.template.footer"
+									value="false"
+								/>
+							</div>
+
 							<h4 class="text-center p-2">Write To Us</h4>
+
+							<input type="hidden" name="name" id="nameInput" />
+							<input
+								type="hidden"
+								name="subject"
+								id="subjectInput"
+							/>
 
 							<div class="row">
 								<div class="col-6">
 									<div class="form-floating mb-3">
 										<input
-											name="name"
+											onchange="document.getElementById('nameInput').value = this.value"
+											name="_email.from"
 											required
 											minlength="2"
 											maxlength="40"
 											type="text"
-											id="floatingInput"
 											class="form-control"
 											placeholder="Your Name"
 										/>
@@ -818,7 +863,6 @@
 											name="email"
 											required
 											type="email"
-											id="floatingInput"
 											class="form-control"
 											placeholder="Your Email"
 										/>
@@ -829,21 +873,14 @@
 								</div>
 							</div>
 
-							<input
-								type="text"
-								name="full-name"
-								value=""
-								class="d-none"
-							/>
-
 							<div class="form-floating mb-3">
 								<input
-									name="subject"
+									onchange="document.getElementById('subjectInput').value = this.value"
+									name="_email.subject"
 									type="text"
 									required
 									maxlength="50"
 									minlength="2"
-									id="floatingInput"
 									class="form-control"
 									placeholder="Subject"
 								/>
@@ -854,14 +891,24 @@
 								<textarea
 									required
 									minlength="2"
-									maxlength="2000"
+									maxlength="200"
 									id="message-textarea"
 									class="form-control"
 									name="message"
 									rows="6"
-								>
-Your Message</textarea
-								>
+									placeholder="Your Message"
+								></textarea>
+							</div>
+
+							<div
+								id="loading"
+								class="my-3 justify-content-center align-items-center"
+							>
+								<div
+									class="spinner-border me-3 text-primary"
+									role="status"
+								></div>
+								<span> Loading </span>
 							</div>
 
 							<div class="text-center">
@@ -968,5 +1015,15 @@ Your Message</textarea
 				</div>
 			</div>
 		</div>
+
+		<!-- <script>
+			const contactUsForm = document.getElementById("contactUsForm");
+
+			contactUsForm.addEventListener("submit", (e) => {
+				e.preventDefault();
+				document.getElementById("loading").style.display = "flex";
+				contactUsForm.submit();
+			});
+		</script> -->
 	</body>
 </html>
