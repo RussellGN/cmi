@@ -1,9 +1,3 @@
-.c-rounded-1 {
-	border-radius: 10px;
-}
-.c-rounded-2 {
-	border-radius: 20px;
-}
 /* template styles */
 @media screen {
 	/* global styles and custom classes */
@@ -71,7 +65,10 @@
 	/* page hero */
 	@media screen {
 		.page-hero {
-			background: url("../img/herosub.png") top center;
+			background: linear-gradient(to bottom right, rgba(2, 47, 52, 0.3), rgba(16, 3, 71, 0.2)),
+				url("../img/herosub.png") top center;
+
+			/* background: url("../img/herosub.png") top center; */
 			background-size: cover;
 			overflow: hidden;
 			position: relative;
@@ -136,7 +133,7 @@
 	/* header */
 	@media screen {
 		#header {
-			transition: all 0.3s ease-in;
+			transition: all 0.2s ease-in;
 		}
 		#header.header-scrolled {
 			padding-top: 0.2rem !important;
@@ -147,7 +144,7 @@
 		.logo {
 			border-radius: 0 20px 20px 0;
 		}
-		@media screen and (min-width: 1400px) {
+		@media screen and (min-width: 992px) {
 			.logo {
 				border-radius: 20px;
 			}
@@ -222,7 +219,7 @@
 	@media screen {
 		#hero {
 			width: 100%;
-			height: 100vh;
+			height: 95vh;
 			background: linear-gradient(to bottom right, rgba(2, 47, 52, 0.9), rgba(16, 3, 71, 0.8)),
 				url("../img/home-hero.jpg") center center;
 			background-size: cover;
@@ -426,7 +423,8 @@
 	/* Cta_*/
 	@media screen {
 		.cta {
-			background: url("../img/herosub.png") top center;
+			/* background: url("../img/herosub.png") top center; */
+			background: linear-gradient(to bottom right, rgb(35, 38, 42), rgb(32, 33, 39));
 			background-size: cover;
 			overflow: hidden;
 			position: relative;
@@ -438,7 +436,7 @@
 		}
 		.cta:before {
 			content: "";
-			background: rgba(8, 15, 149, 0.4);
+			/* background: rgba(8, 15, 149, 0.4); */
 			position: absolute;
 			bottom: 0;
 			top: 0;

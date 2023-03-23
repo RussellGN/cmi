@@ -83,85 +83,90 @@
 			</div>
 		</div>
 
-		<header id="header" class="fixed-top p-2 ps-0">
-			<div
-				class="ps-0 container-fluid container-xxl d-flex align-items-center"
-			>
-				<div class="logo bg-white ms-xxl-3 p-1 ps-3 me-auto">
-					<a href="index.html">
-						<img src="assets/img/logo.webp" />
-					</a>
-				</div>
-
-				<nav class="p-0 navbar navbar-dark order-last order-lg-0">
-					<div class="d-none d-lg-flex align-items-center m-0 p-0">
-						<a class="nav-link active" href="index.html"> Home </a>
-
-						<a class="nav-link" href="about.html">About</a>
+		<header id="header" class=" fixed-top">
+			<div class="container-lg p-0">
+				<div
+					class="d-flex align-items-center p-2 ps-0 ps-lg-5 px-lg-5 "
+				>
+					<div class="logo bg-white p-1 ps-3 me-auto">
+						<a href="index.html">
+							<img src="assets/img/logo.webp" />
+						</a>
 					</div>
 
-					<button
-						id="nav-toggle"
-						class="btn p-0 d-lg-none"
-						type="button"
-						data-bs-toggle="offcanvas"
-						data-bs-target="#mobileNavOffcanvas"
-						aria-controls="mobileNavOffcanvas"
-					>
-						<i class="bi bi-list text-white fs-1 px-1"></i>
-					</button>
-				</nav>
+					<nav class="order-2 order-lg-1">
+						<div class="d-none d-lg-flex">
+							<a class="nav-link active" href="index.html"> Home </a>
 
-				<a
-					class="btn btn-primary rounded-pill me-3 me-lg-0 ms-lg-3"
-					href="contact.html"
-					>contact</a
-				>
+							<a class="nav-link" href="about.html">About</a>
+						</div>
+
+						<button
+							id="nav-toggle"
+							class="btn p-0 d-lg-none"
+							type="button"
+							data-bs-toggle="offcanvas"
+							data-bs-target="#mobileNavOffcanvas"
+							aria-controls="mobileNavOffcanvas"
+						>
+							<i class="bi bi-list text-white fs-1 px-1"></i>
+						</button>
+					</nav>
+
+					<a
+						class="btn btn-primary rounded-pill me-2 me-lg-0 ms-lg-3 order-1 order-lg-last"
+						href="contact.html"
+						>contact</a
+					>
+				</div>
 			</div>
 		</header>
 
-		<section  
-			id="hero"
-			class="d-flex flex-column justify-content-end align-items-center mb-5"
-		>
-			<div class="hero-container">
-				<h1 style="text-transform: none !important;"  class="mb-4 d-lg-none pb-0">
-					Technology Consulting <br> Services
-				</h1>
-				<h1 style="text-transform: none !important;" class="mb-4 d-none d-lg-block pb-0">
-					Technology.Consulting.Services
-				</h1>
+		<div class="container-xxl p-0">
+			<section  
+				id="hero"
+				class="d-flex flex-column justify-content-end align-items-center mb-5"
+			>
+				<div class="hero-container">
+					<h1 style="text-transform: none !important;"  class="mb-4 d-lg-none pb-0">
+						Technology Consulting <br> Services
+					</h1>
 
-				<p class="mb-4 pb-0">
-					We help our clients become the next and best versions of
-					themselves.
-				</p>
+					<h1 style="text-transform: none !important;" class="mb-4 d-none d-lg-block pb-0">
+						Technology.Consulting.Services
+					</h1>
+	
+					<p class="mb-4 pb-0">
+						We help our clients become the next and best versions of
+						themselves.
+					</p>
+	
+					<a
+						href="about.html"
+						class="btn btn-outline-secondary  border-3 rounded-pill"
+						>Get Started</a
+					>
+				</div>
+	
+				<svg class="hero-waves" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+					<defs>
+						<path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
+					</defs>
+					<g class="wave1">
+						<use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)">
+					</g>
+					<g class="wave2">
+						<use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)">
+					</g>
+					<g class="wave3">
+						<use xlink:href="#wave-path" x="50" y="9" fill="#fff">
+					</g>
+				</svg>
+			</section>
+		</div>
 
-				<a
-					href="about.html"
-					class="btn btn-outline-secondary  border-3 rounded-pill"
-					>Get Started</a
-				>
-			</div>
-
-			<svg class="hero-waves" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
-				<defs>
-					<path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
-				</defs>
-				<g class="wave1">
-					<use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)">
-				</g>
-				<g class="wave2">
-					<use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)">
-				</g>
-				<g class="wave3">
-					<use xlink:href="#wave-path" x="50" y="9" fill="#fff">
-				</g>
-			</svg>
-		</section>
-
-		<main>
-			<section class="specialties my-2 my-lg-5">
+		<main class="container-xxl p-0">
+			<section class=" specialties my-2 my-lg-5">
 				<div class="container">
 					<div class="row gy-5">
 						<div class="col-xl-3 d-flex col-md-6">
@@ -233,31 +238,28 @@
 						<p class=" mb-lg-5">Discover what makes CMI.</p>
 					</div>
 
-					<div class="row align-items-center p-4 mb-2 py-3">
-						<div
-							class="col-lg-5 c-rounded overflow-hidden p-0 mb-3 d-flex"
-						>
+					<div class="row justify-content-center align-items-center p-4 mb-3 py-3">
+						<div class="col-lg-5  mb-3 mb-lg-0">
 							<img
 								src="assets/img/home/home-1.svg"
-								class="img-fluid w-100 py-4"
-								alt="worker at a desk"
+								class="w-100 py-4 "
+								alt="Person at a desk"
 							/>
 						</div>
 
-						<div
-							class="col-lg-7 pt-4 pt-md-0  d-md-flex"
-						>
-							<div class="lead text-center text-lg-start px-lg-3 ps-lg-5">
+						<div class="col-lg-6 ">
+							<div class="lead text-center text-lg-start px-lg-3">
 								<p>
-We are independent technology and
- solutions experts changing the way
-  businesses drive innovation within their long-term strategies.
-   At CMI, we have created a whole new set of possibilities;
-	 we embrace the power of change to create all round value for our clients, people, and communities. 
-								<br>
+									We are independent technology and
+									solutions experts changing the way
+									businesses drive innovation within their long-term strategies.
+									At CMI, we have created a whole new set of possibilities;
+									we embrace the power of change to create all round value for our clients, people, 
+									and communities. 
+									<br>
 									<a 
-										href="about.html" 
-										class="btn btn-primary rounded-pill px-3 my-2">
+										href="./about.html" 
+										class="btn btn-primary mt-3 rounded-pill px-3">
 										Read More
 									</a>
 								</p>
@@ -345,7 +347,7 @@ We are independent technology and
 			</section> -->
 
 			<section class="cta mt-5">
-				<div class="container p-5">
+				<div class="container  p-5">
 					<div class="text-center">
 						<h3>GET IN TOUCH</h3>
 						<p class="text-white">
@@ -420,12 +422,12 @@ We are independent technology and
 								><i class="bi bi-linkedin fs-5 me-2"></i
 							></a>
 
-							<a
+							<!-- <a
 								href="https://www.twitter.com/CMI12761904"
 								target="blank"
 								class="twitter"
 								><i class="bi bi-twitter fs-5"></i
-							></a>
+							></a> -->
 						</div>
 					</div>
 				</div>

@@ -78,7 +78,44 @@
 			</div>
 		</div>
 
-		<header id="header" class="fixed-top p-2 ps-0">
+		<header id="header" class="fixed-top">
+			<div class="container-lg p-0">
+				<div class="d-flex align-items-center p-2 ps-0 ps-lg-5 px-lg-5">
+					<div class="logo bg-white p-1 ps-3 me-auto">
+						<a href="index.html">
+							<img src="assets/img/logo.webp" />
+						</a>
+					</div>
+
+					<nav class="order-2 order-lg-1">
+						<div class="d-none d-lg-flex">
+							<a class="nav-link" href="index.html"> Home </a>
+
+							<a class="nav-link active" href="about.html">About</a>
+						</div>
+
+						<button
+							id="nav-toggle"
+							class="btn p-0 d-lg-none"
+							type="button"
+							data-bs-toggle="offcanvas"
+							data-bs-target="#mobileNavOffcanvas"
+							aria-controls="mobileNavOffcanvas"
+						>
+							<i class="bi bi-list text-white fs-1 px-1"></i>
+						</button>
+					</nav>
+
+					<a
+						class="btn btn-primary rounded-pill me-2 me-lg-0 ms-lg-3 order-1 order-lg-last"
+						href="contact.html"
+						>contact</a
+					>
+				</div>
+			</div>
+		</header>
+
+		<!-- <header id="header" class="fixed-top p-2 ps-0">
 			<div class="ps-0 container-fluid container-xxl d-flex align-items-center">
 				<div class="logo bg-white p-1 ms-xxl-3 ps-3 me-auto">
 					<a href="index.html">
@@ -109,14 +146,15 @@
 					>contact</a
 				>
 			</div>
-		</header>
+		</header> -->
+		<div class="container-xxl p-0">
+			<section class="page-hero px-4 py-2 text-white text-center">
+				<h1 class="text-uppercase display-4">ABOUT US</h1>
+				<h3>Discover what makes CMI.</h3>
+			</section>
+		</div>
 
-		<section class="page-hero px-4 py-2 text-white text-center">
-			<h1 class="text-uppercase display-4">ABOUT US</h1>
-			<h3>Discover what makes CMI.</h3>
-		</section>
-
-		<main>
+		<main class="container-xxl p-0">
 			<section class="features my-5">
 				<div class="container py-5 pt-2">
 					<div class="row justify-content-center">
@@ -302,12 +340,12 @@
 								><i class="bi bi-linkedin fs-5 me-2"></i
 							></a>
 
-							<a
+							<!-- <a
 								href="https://www.twitter.com/CMI12761904"
 								target="blank"
 								class="twitter"
 								><i class="bi bi-twitter fs-5"></i
-							></a>
+							></a> -->
 						</div>
 					</div>
 				</div>
